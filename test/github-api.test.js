@@ -1,6 +1,6 @@
-import {getGithubUser} from '../src/async/github-api';
+import {getGithubUser, getGithubUserAsyncFn} from '../src/async/github-api';
 
-describe('Async function to test github api', () => {
+describe('Test github api', () => {
     test('should return an User with name property', () => {
         expect.assertions(1);
         return getGithubUser('nandawtek').then(actual => {
@@ -14,4 +14,11 @@ describe('Async function to test github api', () => {
 
         expect(isPromise).toBe(true);
     })
+});
+
+describe('Async function to test github api', () => {
+    test('should return an User with name property', async () => {
+        expect.assertions(1);
+        expect(await getGithubUserAsyncFn('nandawtek')).toHaveProperty('name', 'Nacho');
+    });
 });
