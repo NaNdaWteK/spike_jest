@@ -9,6 +9,14 @@ function clear(array = []){
     }
 }
 
+function first(array){
+    if (!Array.isArray(array)) {
+        throw new TypeError('argument is not an array');
+    }
+    return array[0] || null;
+}
+
 export {
-    clear
+    clear,
+    first
 };
