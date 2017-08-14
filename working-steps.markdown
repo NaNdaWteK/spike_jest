@@ -12,3 +12,7 @@
 
 ## Configure babel
 Create .babelrc file
+
+## Run test
+* `npm run test`
+* `npm t`
