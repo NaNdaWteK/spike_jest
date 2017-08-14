@@ -33,3 +33,9 @@ Need to add a npm module to do the calls
 It runs if has a word of the test file or all its name
 
 `npm run test github`
+
+## Add Interactive mode of jest
+
+* 1.- Add interactive mode to package.json
+* 2.- Update modules: `npm update`
+* 3.- Run in interactive mode: `npm run test:watch`
