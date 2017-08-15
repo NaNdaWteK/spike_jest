@@ -1,0 +1,10 @@
+version: '2'
+services:
+  test:
+    container_name: jest-testing
+    build: .
+    volumes:
+     - .:/opt/test/jest
+    tty: true
+
+    command: bash -c "npm install"

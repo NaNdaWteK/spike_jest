@@ -7,13 +7,23 @@ Based in a course of Enrique Munguía(software engineer in google)
 
 `git clone https://github.com/NaNdaWteK/spike_jest.git`
 
-## Install modules
+### For launch with docker
+
+See dockerized.md
+
+### For use in your system
+
+You need node
+
+* Install modules
 
 `npm install`
 
-## Run test
+* Run test
 
 `npm t`
+
+
 
 ## Start your own project
 
