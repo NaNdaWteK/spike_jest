@@ -25,6 +25,14 @@ Need to add a npm module to do the calls
 
 ## Run test
 
+In diferent steps the script is diferent for coverage or others, but minimal you need add this to your package.json
+
+```
+"scripts": {
+    "test": "jest"
+},
+```
+
 * `npm run test`
 * `npm t`
 
